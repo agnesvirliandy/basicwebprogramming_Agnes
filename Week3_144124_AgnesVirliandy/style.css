@@ -1,0 +1,383 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+#logo {
+  font-family: "Comic Sans MS";
+  color: tomato;
+  text-shadow: 2px 2px 2px #000;
+  margin-bottom: 0;
+}
+
+#logo img {
+  width: 75px; /* Logo orang di ujung diperkecil */
+}
+
+nav {
+  background-color: #555;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: pink;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  width: 70%;
+}
+
+aside {
+  width: 25%;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+aside ul {
+  padding-left: 20px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+aside ul li a:hover {
+  color: pink;
+}
+
+.btn {
+  background-color: pink;
+  color: #d0006f;
+  padding: 7px 15px;
+  border: 1px solid #ff69b4;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ff69b4;
+  color: white;
+}
+
+.form-input {
+  width: 350px;
+  height: 25px;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+.form-input:focus {
+  border-color: pink;
+  outline: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-item {
+  width: 120px;
+  padding: 5px;
+  border: 5px solid #ddd;
+  background-color: white;
+  text-align: center;
+}
+
+.gallery-item:hover {
+  border-color: pink;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  margin: 5px 0;
+}
+
+.service-table {
+  width: 240px;
+  border-collapse: collapse;
+  margin: 0 auto 15px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.service-table th,
+.service-table td {
+  border: 1px solid #d5d5d5;
+  padding: 4px 5px;
+}
+
+.service-table .service-title {
+  background-color: pink;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.center {
+  text-align: center;
+}
+
+.home {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.hero {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Mengatur 3 kotak highlight gambar agar sejajar dan proporsional */
+.home-gallery .gallery-item {
+  width: 32%;
+  height: 160px;
+  padding: 0;
+  border: 5px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.home-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subtitle {
+  display: flex;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.subtitle > img {
+  width: 40%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.subtitle-text {
+  padding: 15px;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.box-container .box {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+/* ==========================================================
+   TAMBAHAN MODUL: MENU ATAS, KLIEN, TESTIMONIAL, NEWSLETTER, FOOTER
+   ========================================================== */
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 80%;
+  margin: 20px auto;
+}
+
+#menu {
+  margin-top: 0;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  padding: 10px 0;
+  display: inline-block;
+}
+
+#menu ul li a:hover,
+#menu ul li a.active {
+  color: #0056b3;
+  border-bottom: 4px solid #0056b3;
+}
+
+.client-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.client-row .gallery-item {
+  flex: 1;
+  height: 70px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-row .gallery-item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.testi-box {
+  width: 50%;
+  background: #777;
+  color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.newsletter-box {
+  background: #ff1493;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* Footer tersusun ke bawah */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-info h4 {
+  margin: 0 0 10px 0;
+}
+
+.footer-info p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+  background: #555;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 13px;
+}
